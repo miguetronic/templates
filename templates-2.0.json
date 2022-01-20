@@ -9,7 +9,7 @@
 				"docker"
 			],
 			"platform":"linux",
-			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+			"logo":"https://transpara.com/wp-content/uploads/revslider/static-only/VisualKPI-Logo-Transparent-White.png",
 			"image":"registry:latest",
 			"ports":[
 				"5000/tcp"
