@@ -11,7 +11,6 @@
 			],
 			"platform":"linux",
 			"logo":"https://pbs.twimg.com/profile_images/1132790832728117248/TI3MdP1j_400x400.png",
-			"Registry":"ducker-hub-transpara",
             		"image":"transpara/nginx:latest",
             
 			"ports":[
