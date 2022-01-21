@@ -10,7 +10,7 @@
 			],
 			"platform":"linux",
 			"logo":"https://pbs.twimg.com/profile_images/1132790832728117248/TI3MdP1j_400x400.png",
-			"image":"nginx:latest",
+			"image":"https://github.com/nginxinc/docker-nginx/blob/01561128671d4e33c039a654fe198c6259a2514c/mainline/alpine/Dockerfile",
 			"ports":[
 				"80/tcp",
 				"443/tcp"
