@@ -22,83 +22,83 @@
                     "container": "/etc/nginx"
                 },
                 {
-                    "container": "/usr/share/nginx/html" 
-				} 
-                ]
-            },
-            {
-                "type": 1,
-                "title": "tStore",
-                "description": "Data storage for Transpara",
-                "categories": [
-                    "webserver2",
-                    "without Registry"
-                ],
-                "platform": "linux",
-                "logo": "https://pbs.twimg.com/profile_images/1132790832728117248/TI3MdP1j_400x400.png",
-                "image": "transpara/nginx:latest",
-                "ports": [
-                    "80/tcp",
-                    "443/tcp"
-                ],
-                "volumes": [
-                    {
-                        "container": "/etc/nginx"
-                    },
-                    {
-                        "container": "/usr/share/nginx/html"
-                    }
-                ]
-            },
-            {
-                "type": 3,
-                "title": "tstore stack",
-                "description": "tstore stack",
-                "note": "Deploys tstore",
-                "categories": [
-                    "database"
-                ],
-                "platform": "linux",
-                "logo": "https://pbs.twimg.com/profile_images/1132790832728117248/TI3MdP1j_400x400.png",
-                "repository": {
-                    "url": "https://github.com/miguetronic/transpara",
-                    "stackfile": "stacks/transpara_tstore/docker-compose.yml"
+                    "container": "/usr/share/nginx/html"
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "title": "tStore",
+            "description": "Data storage for Transpara",
+            "categories": [
+                "webserver2",
+                "without Registry"
+            ],
+            "platform": "linux",
+            "logo": "https://pbs.twimg.com/profile_images/1132790832728117248/TI3MdP1j_400x400.png",
+            "image": "transpara/nginx:latest",
+            "ports": [
+                "80/tcp",
+                "443/tcp"
+            ],
+            "volumes": [
+                {
+                    "container": "/etc/nginx"
                 },
-		 {
-  "env": [
-    {
-      "name": "MYSQL_ROOT_PASSWORD",
-      "label": "Root password",
-      "description": "Password used by the root user."
-    },
-    {
-      "name": "ENV_VAR_WITH_DEFAULT_VALUE",
-      "default": "default_value",
-      "preset": true
-    },
-    {
-      "name": "ENV_VAR_WITH_SELECT_VALUE",
-      "label": "An environment variable",
-      "description": "A description for this env var",
-      "select": [
-        {
-          "text": "Yes, I agree",
-          "value": "Y",
-          "default": true
+                {
+                    "container": "/usr/share/nginx/html"
+                }
+            ]
         },
         {
-          "text": "No, I disagree",
-          "value": "N"
-        },
-        {
-          "text": "Maybe",
-          "value": "YN"
-        }
-      ],
-      "description": "Some environment variable."
-    }
-  ]
-}
+            "type": 3,
+            "title": "tstore stack",
+            "description": "tstore stack",
+            "note": "Deploys tstore",
+            "categories": [
+                "database"
+            ],
+            "platform": "linux",
+            "logo": "https://pbs.twimg.com/profile_images/1132790832728117248/TI3MdP1j_400x400.png",
+            "repository": {
+                "url": "https://github.com/miguetronic/transpara",
+                "stackfile": "stacks/transpara_tstore/docker-compose.yml"
             }
-        ]
-    }
+        },
+        {
+            "env": [
+                {
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "label": "Root password",
+                    "description": "Password used by the root user."
+                },
+                {
+                    "name": "ENV_VAR_WITH_DEFAULT_VALUE",
+                    "default": "default_value",
+                    "preset": true
+                },
+                {
+                    "name": "ENV_VAR_WITH_SELECT_VALUE",
+                    "label": "An environment variable",
+                    "description": "A description for this env var",
+                    "select": [
+                        {
+                            "text": "Yes, I agree",
+                            "value": "Y",
+                            "default": true
+                        },
+                        {
+                            "text": "No, I disagree",
+                            "value": "N"
+                        },
+                        {
+                            "text": "Maybe",
+                            "value": "YN"
+                        }
+                    ],
+                    "description": "Some environment variable."
+                }
+            ]
+        }
+    ]
+}
