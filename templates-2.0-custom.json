@@ -64,7 +64,7 @@
                 "url": "https://github.com/miguetronic/transpara",
                 "stackfile": "stacks/transpara_tstore/docker-compose.yml"
             },
-            "registry": "github-miguetronic"
+            "registry": "https://github.com/miguetronic/transpara/"
         }
     ]
 }
